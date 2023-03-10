@@ -1,7 +1,8 @@
 name: Run a notebook in databricks on PRs
 
 on:
- pull_request:
+  push:
+    branches: [ "databricks" ]
 
 jobs:
  run-databricks-notebook:
