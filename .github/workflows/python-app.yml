@@ -13,7 +13,7 @@ jobs:
      - name: Run a databricks notebook
        uses: databricks/run-notebook@v0
        with:
-         local-notebook-path: hello_world.py
+         local-notebook-path: hello_world_1.py
          databricks-host: ${{ secrets.DATABRICKS_HOST }}
          databricks-token: ${{ secrets.DATABRICKS_TOKEN }}
          git-commit: ${{ github.event.pull_request.head.sha || github.sha }}
@@ -23,8 +23,6 @@ jobs:
              "spark_version": "11.3.x-scala2.12",
              "node_type_id": "i3.xlarge"
            }
-         libraries-json: >
-           [{"pypi": "sklearn"}, {"pypi": "mlflow"}]
           
 
 
