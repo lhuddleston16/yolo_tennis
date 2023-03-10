@@ -23,7 +23,8 @@ jobs:
              "spark_version": "11.3.x-scala2.12",
              "node_type_id": "i3.xlarge"
            }
-
+         libraries-json: >
+           {[{"pypi": "roboflow==0.2.31"}, {"pypi": "ultralytics==8.0.20"},{"pypi": "mlflow==2.2.1"}]}
           
 
 
