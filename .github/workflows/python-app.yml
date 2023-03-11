@@ -18,6 +18,23 @@ jobs:
          databricks-token: ${{ secrets.DATABRICKS_TOKEN }}
          git-commit: ${{ github.event.pull_request.head.sha || github.sha }}
          existing-cluster-id: 0310-235344-6fpcvwav
+         libraries-json: >
+           [{
+              "pypi": {
+                "package": "roboflow==0.2.31"
+              }
+            },
+            {
+              "pypi": {
+                "package": "ultralytics==8.0.20"
+              }
+            },
+            {
+              "pypi": {
+                "package": "mlflow==2.2.1"
+              }
+            }]
+           
           
 
 
