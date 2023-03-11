@@ -34,6 +34,9 @@ jobs:
                 "package": "mlflow==2.2.1"
               }
             }]
+         notebook-params-json: >
+            [{"key1":"value1", "key2":"value2"}]
+           
            
           
 

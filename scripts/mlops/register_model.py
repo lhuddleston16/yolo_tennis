@@ -9,7 +9,7 @@ import mlflow
 from scripts.mlops import model_wrapper
 from scripts.mlops.model_wrapper import YoloWrapper
 
-mlflow.set_tracking_uri("./mlruns")
+mlflow.set_tracking_uri("databricks")
 
 
 def get_experiment_id(name: str):
