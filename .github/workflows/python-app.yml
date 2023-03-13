@@ -35,10 +35,10 @@ jobs:
               }
             }]
          notebook-params-json: >
-              {
+              [{
                   "python_params":[
                     "value1","value2"]
-                  }
+                  }]
            
            
           
