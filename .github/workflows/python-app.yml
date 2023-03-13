@@ -36,11 +36,9 @@ jobs:
             }]
          notebook-params-json: >
               {
-                  "base_parameters":{
-                    "key1":"value1",
-                    "key2":"value2"
+                  "python_params":[
+                    "value1","value2"]
                   }
-              }
            
            
           
